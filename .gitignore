@@ -1,0 +1,40 @@
+# Node
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Cordova platforms & plugins (worden opnieuw gegenereerd)
+platforms/
+plugins/
+
+# Cordova build output
+www/cordova.js
+www/cordova_plugins.js
+www/plugins/
+
+# Android build artifacts
+*.apk
+*.aab
+*.keystore
+*.jks
+android/app/build/
+android/build/
+.gradle/
+local.properties
+
+# iOS build artifacts
+*.xcworkspace
+*.xcuserdata/
+*.xcuserstate
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+DerivedData/
+
+# VS Code
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db

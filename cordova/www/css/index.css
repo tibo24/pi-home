@@ -1,0 +1,95 @@
+body{
+    background-color: #eee;
+}
+
+.block{
+    background-color: #fff;
+    display: block;
+    margin: 40px 20px;
+    border-radius: 10px;
+    padding: 0px 5px 5px 5px;
+    width: auto;
+}
+
+.block h3, .block h4, .block h5{
+    padding-top: 10px;
+}
+
+.nav-wrapper{
+    background-color: #FF6308;
+}
+
+#logo-img{
+    height: 46px;
+    margin-top: 5px;
+}
+
+/* homepagina */
+/* temperatuurpagina */
+#tempGauge{
+    width: 200px;
+    margin: auto;
+}
+
+/* lichtpagina */
+.block-light{
+    display: flex;
+    justify-content: center;
+}
+
+.block-light img{
+    width: 80px;
+    height: 100%;
+    padding-left: 20px;
+}
+
+/* contactpagina */
+#contact{
+    display: block;
+    background-color: #505050;
+    width: 90%;
+    margin: 5%;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+#fotoContact{
+    border-radius: 50%;
+    border: 3px darkgrey solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#naamFoto{
+    font-style: italic;
+    font-weight: bold;
+    font-family: Pacifico, cursive;
+    font-size: 24px;
+}
+
+#contactblock{
+    display: flex;
+    margin: 5px auto;
+    padding: 0px;
+    max-width: 240px;
+}
+
+#contactblock a{
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #ddd;
+    border-radius: 50%; 
+    position: relative;
+}
+
+#contactblock a i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #555;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/switch.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"/>
+    <title>Hello World</title>
+</head>
+<body>
+<nav>
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"><img src="./img/pi-home-logo.png" alt="Logo" id="logo-img"></a>
+        <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#!" data-show="home">Home</a></li>
+            <li><a href="#!" data-show="temperatuur">Temperatuur</a></li>
+            <li><a href="#!" data-show="licht">Bestuur uw lichten</a></li>
+            <li><a href="#!" data-show="info">Info</a></li>
+        </ul>
+    </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+    <br>
+    <li><a href="#!" data-show="home">Home</a></li>
+    <li><a href="#!" data-show="temperatuur">Temperatuur</a></li>
+    <li><a href="#!" data-show="licht">Bestuur uw lichten</a></li>
+    <li><a href="#!" data-show="info">Info</a></li>
+</ul>
+
+<div class="content" id="home">
+    <div class="block z-depth-3">
+        <h5 class="center-align">Welkom bij Pi-Home</h5>
+        <p>Met Pi-Home kan je je lichten besturen via je smartphone en de temperatuur in je huis zien via de app.</p>
+        <p>Onder "Bestuur uw lichten" kan je elk licht in je huis individueel aanzetten en je kan ook zien of de lichten aan zijn of niet. Zo weet je zeker dat je nooit je licht onnodig aanlaat.</p>
+        <p>In het tab "Temperatuur" vind je de actuele tempperatuur van je huis alsook een overzicht van de temperatuur van de laatste 8 uur.</p>
+        <p>Voor vragen over de app kan je via het tab "Info" contact opnemen.</p>
+    </div>
+</div>
+
+<div class="content" id="temperatuur">
+    <div class="block z-depth-3">
+        <h4 class="center-align">Actuele temperatuur</h4>
+        <div id="tempGauge"></div>
+    </div>
+    <div class="block z-depth-3" id="blocktempGraph">
+        <h5 class="center-align">Temperatuur laatste 8 uur</h5>
+        <div id="tempGraph"></div>
+    </div>
+</div>
+
+<div class="content" id="licht">
+    <div class="block z-depth-3">
+        <h3 class="center-align">Lamp 1</h3>
+        <div class="block-light">
+            <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="lamp1">
+                <label class="onoffswitch-label" for="lamp1">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+            </div>
+            <img src="img/light_off.png" alt="licht" id="lamp1img">
+        </div>
+    </div>
+    <div class="block z-depth-3">
+        <h3 class="center-align">Lamp 2</h3>
+        <div class="block-light">
+            <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="lamp2">
+                <label class="onoffswitch-label" for="lamp2">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+            </div>
+            <img src="img/light_off.png" alt="licht" id="lamp2img">
+        </div>
+    </div>
+</div>
+
+<div id="info" class="content">
+    <div class="block z-depth-3">
+        <h3 class="center-align">Made by:</h3>
+        <img src="./img/tibo.jpg" alt="Foto van mij"  class="circle responsive-img" id="fotoContact">
+        <p class="center-align" id="naamFoto">Tibo Vermunicht</p>
+    </div>
+    <div class="block z-depth-3">
+        <h3 class="center-align">Contact</h3>
+        <div id="contactblock">
+            <a href="" class="z-depth-2" id="mail"><i class="small material-icons">email</i></a>
+            <a href="tel:+32478035295" class="z-depth-2" id="tel"><i class="small material-icons">call</i></a>
+            <a href="sms:+32478035295" class="z-depth-2" id="sms"><i class="small material-icons">sms</i></a>
+        </div>
+
+    </div>
+    <a href="mailto:demo@demo.com?sybject=aaaa">mailmij</a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="cordova.js"></script>
+<script src="js/database.js"></script>
+<script src="js/graph.js"></script>
+<script src="js/mail.js"></script>
+<script src="js/finger.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
